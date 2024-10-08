@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils.translation.trans_null import get_language
+
 
 # Create your models here.
 class Game(models.Model):
@@ -9,6 +11,7 @@ class Game(models.Model):
     update_time = models.DateField(verbose_name="Дата последнего обновления", auto_now=True)
     version = models.TextField(verbose_name="Версия", max_length=20, default="1.0.0")
     image = models.ImageField(verbose_name="Изображение", upload_to="games/", blank=True)
+    language = models.CharField(verbose_name="Язык", max_length=255, default="ru", choices=LANGUAGE_CHOICES)
     publisher = models.ForeignKey(
         'Publisher',
         verbose_name="Издатель",
@@ -17,6 +20,19 @@ class Game(models.Model):
         null=True
     )
 
+    LANGUAGE_CHOICES = {
+        "RU": "Русский",
+        "EN": "Английский",
+        "FR": "Французский",
+        "ES": "Испанский",
+        "DE": "Немецкий",
+        "IT": "Итальянский",
+        "NL": "Нидерландский",
+        "PL": "Польский",
+        "PT": "Португальский",
+        "TR": "Турецкий",
+    }
+
     class Meta:
         verbose_name = "Игра"
         verbose_name_plural = "Игры"
@@ -24,6 +40,7 @@ class Game(models.Model):
 
     def __str__(self):
         return self.title
+
 
 
 class Developer(models.Model):
