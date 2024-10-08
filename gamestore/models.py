@@ -41,6 +41,8 @@ class Game(models.Model):
     def __str__(self):
         return self.title
 
+    def get_discount_fall(self):
+        return (self.price - (self.price * 0.25))
 
 
 class Developer(models.Model):
@@ -112,3 +114,4 @@ class Statistics(models.Model):
 
     def __str__(self):
         return f'{self.game} - {self.review_score}'
+
