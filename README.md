@@ -1,7 +1,9 @@
 # Все задания по порядку
 1. Создание объектов и запросы
+
 ![zad1](https://github.com/user-attachments/assets/3aee6556-9d19-4477-b6bf-1715c68c2579)
 2. filter, exclude, order_by
+
 ![zad21](https://github.com/user-attachments/assets/645a40a1-78f8-42e6-9afc-0fc596dc1f0b)
 ![zad22](https://github.com/user-attachments/assets/52ec2377-c507-4e14-acd5-fca233bff5cd)
 ![zad23](https://github.com/user-attachments/assets/6e5e7d82-c5dc-4ab7-8739-f1a01157db0d)
@@ -9,6 +11,7 @@
 ![zad26](https://github.com/user-attachments/assets/75d28e2d-541c-43ed-b906-c9d3ca6b8836)
 ![zad29](https://github.com/user-attachments/assets/33ab42b1-f67d-4cdf-9536-c9233915483e)
 3. Связи и values, values_list
+
 ![zad31](https://github.com/user-attachments/assets/288b2556-300a-4738-912d-db6898f79910)
 ![zad32](https://github.com/user-attachments/assets/436b5d0f-08ec-493b-bac3-8590d27e22ee)
 ![zad33](https://github.com/user-attachments/assets/5134e816-8e14-4f02-9f3b-d2342d5fb942)
@@ -16,10 +19,12 @@
 ![zad35](https://github.com/user-attachments/assets/7d9ff751-e652-4161-9846-d9c87e5b2ba6)
 ![zad36](https://github.com/user-attachments/assets/7e19ebda-66f8-4eaf-a714-a938f81ad6e8)
 4. Q-объекты
+
 ![zad41](https://github.com/user-attachments/assets/06c19818-d3f6-49bf-b8b0-1c3d0b9edb7e)
 ![zad42](https://github.com/user-attachments/assets/291feb80-cb2a-4e1f-9da3-6ceba8c3d9ad)
 ![zad43](https://github.com/user-attachments/assets/5828e319-7def-4dd1-8d14-f89e69c9172c)
 5. annotate и aggregate
+
 ![zad52](https://github.com/user-attachments/assets/636a4f85-78ba-4b6e-abb5-97024efcccf7)
 ![zad53](https://github.com/user-attachments/assets/e44609c1-b163-4d0a-88a8-1f795b140fb2)
 ![zad54](https://github.com/user-attachments/assets/295f5e2a-e3b7-4883-b38c-fbfe25bb3d42)
