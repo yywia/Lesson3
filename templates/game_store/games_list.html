@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Игры {% endblock %}
+{% block content %}
+    <h1>Игры:</h1>
+        <div class="row">
+            {% for game in games %}
+            <div class="col-md-4 mt-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ game.title }}</h5>
+                        <p class="card-text">{{ game.publisher }}</p>
+                        <a href="{% url 'games_detail' game.pk %}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{% url 'game_create' %}" class="btn btn-success">Добавить игру</a>
+{% endblock %}

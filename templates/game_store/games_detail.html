@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ game.title }}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+            <h1>{{ game.title }}</h1>
+            <br>
+            <h5>Издатель: {{ game.publisher.name }}</h5>
+            <br>
+            <p><strong>Описание:</strong> {{ game.description }} </p>
+            <p><strong>Жанр:</strong>
+                {% for genre in game.genres.all %}
+                    {{ genre.name }}
+                {% endfor %}
+            </p>
+            <p><strong>Цена: </strong>{{ game.price }}</p>
+            <a href="{% url 'games_list' %}" class="btn btn-secondary">Назад к списку игр</a>
+            <a href="{% url 'games_update' game.pk %}" class="btn btn-warning">Редактировать</a>
+            <a href="{% url 'games_delete' game.pk %}" class="btn btn-danger">Удалить</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

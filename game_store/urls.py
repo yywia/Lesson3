@@ -14,9 +14,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
+from gamestore import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('games_list/', views.GamesList.as_view(), name='games_list'),
+    path('games/<int:pk>/', views.GamesDetail.as_view(), name='games_detail'),
+    path('games/<int:pk>/update/', views.GamesUpdate.as_view(), name='games_update'),
+    path('games/<int:pk>/delete/', views.GamesDelete.as_view(), name='games_delete'),
+    path('games/create/', views.GamesCreate.as_view(), name='game_create'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
