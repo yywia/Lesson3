@@ -4,6 +4,7 @@ from django.utils.translation.trans_null import get_language
 
 # Create your models here.
 class Game(models.Model):
+    id = models.BigAutoField(primary_key=True)
     title = models.CharField(verbose_name="Название", max_length=255, unique=True)
     description = models.TextField(verbose_name="Описание", blank=True)
     price = models.FloatField(verbose_name="Цена")
@@ -11,18 +12,18 @@ class Game(models.Model):
     update_time = models.DateField(verbose_name="Дата последнего обновления", auto_now=True)
     version = models.TextField(verbose_name="Версия", max_length=20, default="1.0.0")
     image = models.ImageField(verbose_name="Изображение", upload_to="games/", blank=True)
-    LANGUAGE_CHOICES = {
-        "RU": "Русский",
-        "EN": "Английский",
-        "FR": "Французский",
-        "ES": "Испанский",
-        "DE": "Немецкий",
-        "IT": "Итальянский",
-        "NL": "Нидерландский",
-        "PL": "Польский",
-        "PT": "Португальский",
-        "TR": "Турецкий",
-    }
+    LANGUAGE_CHOICES = [
+        ("RU", "Русский"),
+        ("EN", "Английский"),
+        ("FR", "Французский"),
+        ("ES", "Испанский"),
+        ("DE", "Немецкий"),
+        ("IT", "Итальянский"),
+        ("NL", "Нидерландский"),
+        ("PL", "Польский"),
+        ("PT", "Португальский"),
+        ("TR", "Турецкий")
+    ]
     language = models.CharField(verbose_name="Язык", max_length=255, default="ru", choices=LANGUAGE_CHOICES)
     publisher = models.ForeignKey(
         'Publisher',
