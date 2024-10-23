@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'gamestore',
     'bootstrap5',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

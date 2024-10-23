@@ -3,14 +3,17 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import TemplateView, ListView, DetailView, UpdateView, DeleteView, CreateView
+from django_filters.views import FilterView
 
 from gamestore.models import Game
+from gamestore import filters
 
 # Create your views here.
-class GamesList(ListView):
+class GamesList(FilterView):
     template_name = 'game_store/games_list.html'
     model = Game
     context_object_name = 'games'
+    filterset_class = filters.Game
 
 class GamesDetail(DetailView):
     template_name = 'game_store/games_detail.html'
