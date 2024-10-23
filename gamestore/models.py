@@ -12,6 +12,7 @@ class Game(models.Model):
     update_time = models.DateField(verbose_name="Дата последнего обновления", auto_now=True)
     version = models.TextField(verbose_name="Версия", max_length=20, default="1.0.0")
     image = models.ImageField(verbose_name="Изображение", upload_to="games/", blank=True)
+    is_available = models.BooleanField(verbose_name="Наличие", default=True)
     LANGUAGE_CHOICES = [
         ("RU", "Русский"),
         ("EN", "Английский"),
