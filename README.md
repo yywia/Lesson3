@@ -1,4 +1,4 @@
-# Все задания по порядку
+# ДЗ QUERYSET
 1. Создание объектов и запросы
 
 ![zad1](https://github.com/user-attachments/assets/3aee6556-9d19-4477-b6bf-1715c68c2579)
@@ -31,3 +31,21 @@
 ![zad55](https://github.com/user-attachments/assets/0e4dc5c5-65bd-4985-b219-49da86b9ff15)
 ![zad56](https://github.com/user-attachments/assets/bb50e378-4ecf-45f3-a7d2-50a4b465195b)
 ![zad57](https://github.com/user-attachments/assets/b11e346c-8279-4637-8df4-b46e4b0f53ba)
+
+# ДЗ #6
+
+1. filters.py
+
+![image](https://github.com/user-attachments/assets/53f37070-c1d0-49b9-b7a7-9c90d43da4f3)
+
+2. реализация на сайте
+
+![image](https://github.com/user-attachments/assets/84b8b462-f101-4fa6-b42a-4f3db4fd71b3)
+![image](https://github.com/user-attachments/assets/ff2dd117-a207-4cc8-9e43-6b78848dbc03)
+![image](https://github.com/user-attachments/assets/a18d1b0f-a96b-419a-80e8-527f5cd610ee)
+![image](https://github.com/user-attachments/assets/22f87e3c-b0a1-41db-b9fa-ea8c1d8b0984)
+![image](https://github.com/user-attachments/assets/c7498e2f-a338-400f-99da-05ced3aee99d)
+![image](https://github.com/user-attachments/assets/71c9328b-3566-4989-b6a6-8c8db39f29b2)
+
+
+
