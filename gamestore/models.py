@@ -34,8 +34,6 @@ class Game(models.Model):
         null=True
     )
 
-
-
     class Meta:
         verbose_name = "Игра"
         verbose_name_plural = "Игры"
